@@ -61,18 +61,21 @@ const faqData = [
     content:
       "Stori is a web story with an easy drag and drop builder that builds web stories [in amp format], Quizzes, Polls, mobile ecom stores and more that will help engage your audience, get insane SEO traffic, generate leads, drive sales, gain insights and shoot your conversions to the moon.",
     show1: false,
+    id: 1,
   },
   {
     title: "Who is STORI for?",
     content:
       "Stori is a great fit for anybody either web or mobile platform where users have need drive insane traffic, generate leads and engage their audience. Whether you're a blog, website, e-commerce store, or social media management tool, STORI app makes creating web stories seamless. Check out some of our 'demos here' (Insert link to demo and create a short video) to see STORI in action.",
     show2: false,
+    id: 2,
   },
   {
     title: "Is the STORI available on mobile?",
     content:
       "We're currently available on web platforms, so the STORI will work on your mobile website responsively. ",
     show3: false,
+    id: 3,
   },
   {
     title:
@@ -80,6 +83,7 @@ const faqData = [
     content:
       "Yes, users will need to sign into your STORI account in order to use the STORI app. We have taken out the normal onboarding steps, so your users can get straight to creating a web story by logging in after purchasing a plan.",
     show4: false,
+    id: 4,
   },
   {
     title:
@@ -87,12 +91,14 @@ const faqData = [
     content:
       "Please email our support team support@xcod.io if you plan on only making your STORI app available to paid customers, or charge your users to access STORI. This arrangement requires that you upgrade to the resellers plan should you decide to.",
     show5: false,
+    id: 5,
   },
   {
     title: "I can’t find answers to my questions. Where do I go for help?",
     content:
       "Please click here for assistance support@xcod.io A member of our team will attend to you",
     show6: false,
+    id: 6,
   },
 ];
 

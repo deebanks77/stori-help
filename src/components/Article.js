@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 function Article() {
   const [embedVideo, setEmbedVideo] = useState(true);
-  const handlePlay = () => {
-    setEmbedVideo(true);
-  };
+  // const handlePlay = () => {
+  //   setEmbedVideo(true);
+  // };
   // window.addEventListener("click", function (event) {
   //   if (event.target.id !== "youtubeIcon") {
   //     setEmbedVideo(false);

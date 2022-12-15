@@ -79,6 +79,7 @@ a {
 .App {
   width: 100%;
   max-width: 1500px;
+  overflow-x: hidden;
 }
 
 /* Navbar style start */
@@ -548,10 +549,10 @@ a {
     line-height: 23px;
   }
   .FAQs .question.show:nth-child(3) {
-    height: 90px;
+    height: 100px;
   }
   .FAQs .question.show:nth-child(4) {
-    height: 110px;
+    height: 140px;
   }
   .FAQs .question.show:nth-child(5) {
     height: 90px;
@@ -573,6 +574,7 @@ a {
   .help .article {
     width: 100%;
     max-width: 400px;
+    padding: 5px 10px;
   }
   .help .videoContainer {
     margin: 10px auto 60px;
