@@ -1,43 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { article } from "./data";
 import { Link } from "react-router-dom";
-// import video from "../videos/StoriDemo.mp4";
+import video from "../videos/StoriDemo.mp4";
 
 function Article() {
-  const [embedVideo, setEmbedVideo] = useState(true);
-  // const handlePlay = () => {
-  //   setEmbedVideo(true);
-  // };
-  // window.addEventListener("click", function (event) {
-  //   if (event.target.id !== "youtubeIcon") {
-  //     setEmbedVideo(false);
-  //   }
-  // });
+  const vidRef = useRef();
+
+  useEffect(() => {
+    vidRef.current.play();
+  }, []);
+
   return (
     <section className="section help" id="top-article">
       <div className="videoContainer">
-        {embedVideo && (
-          <div className="video">
-            <iframe
-              width="100%"
-              height="398px"
-              src="https://www.youtube.com/embed/TP_AwjkiANE?autoplay=1"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="autoplay;"
-              allowFullScreen
-            ></iframe>
-          </div>
-        )}
-
-        {/* <video
-          style={{ maxWidth: "100%", width: "600px", margin: "0 auto" }}
+        <video
+          style={{
+            width: "100%",
+            height: "100%",
+            maxHeight: "395px",
+            margin: "0 auto",
+          }}
           autoplay
           muted
           loop
-        >
-          <source src={video} type="video/mp4" />
-        </video> */}
+          controls
+          src={video}
+          ref={vidRef}
+          // className="video"
+        ></video>
       </div>
 
       <div className="title">

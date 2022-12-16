@@ -1,18 +1,28 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { storiLogo } from "./images";
-import { FiSettings } from "react-icons/fi";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FaTimes } from "react-icons/fa";
 
 function Navbar() {
   const [show, setShow] = useState(false);
 
-  const handleHamburger = () => {
-    setShow(true);
-  };
   const handleClose = () => {
     setShow(false);
+  };
+
+  window.addEventListener("click", function (event) {
+    if (event.target.classList.contains("hamburger")) {
+      setShow(true);
+      return;
+    } else {
+      setShow(false);
+      return;
+    }
+  });
+
+  const handleHamburger = () => {
+    setShow(true);
   };
 
   return (
@@ -38,10 +48,6 @@ function Navbar() {
           </li>
         </ul>
         <div className="nav-setting">
-          <Link to="/settings">
-            <FiSettings className="setting-icon" />
-          </Link>
-
           <a
             href="https://app.storiapp.io/auth/login"
             target="_blank"
@@ -56,35 +62,36 @@ function Navbar() {
         />
       </nav>
 
-      <div className={`hamburgerNav ${show ? "" : "closeHamburgerNav"} `}>
+      <div
+        className={`hamburgerNav ${show ? "" : "closeHamburgerNav"} `}
+        // onClick={handleClose}
+      >
         <FaTimes onClick={handleClose} className={`closeNav `} />
 
         <ul className="hamburgerNavlist">
-          <li className="">
+          <li className="nav-btn" onClick={handleClose}>
             <Link to="/article">Top article</Link>{" "}
           </li>
-          <li className="">
+          <li className="nav-btn" onClick={handleClose}>
             <Link to="/faq">FAQs</Link>{" "}
           </li>
-          <li className="">
+          <li className="nav-btn" onClick={handleClose}>
             <Link to="/article">Contact Support</Link>{" "}
           </li>
-          <li className="">
+          <li className="nav-btn" onClick={handleClose}>
             <Link to="/article">Learn</Link>{" "}
           </li>
         </ul>
 
         <div className="hamburgerNav-setting">
-          <Link to="/settings">
-            <FiSettings className="setting-icon" />
-          </Link>
-
           <a
             href="https://app.storiapp.io/auth/login"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="button">create a stori</button>
+            <button onClick={handleClose} className="button nav-btn">
+              create a stori
+            </button>
           </a>
         </div>
       </div>

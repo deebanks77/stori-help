@@ -39,7 +39,7 @@ function FAQs() {
             {state["show1"] ? <RxPlus /> : <RxMinus />}
           </div>
           <h4 className="">Who is STORI for?</h4>
-          <p className={`faqContent ${state["show1"] ? "" : "showFaqContent"}`}>
+          <p className={`faqContent ${state["show1"] ? "showFaqContent" : ""}`}>
             Stori is a great fit for anybody either web or mobile platform where
             users have need drive insane traffic, generate leads and engage
             their audience. Whether you're a blog, website, e-commerce store, or

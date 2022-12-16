@@ -42,10 +42,10 @@ const article = [
     page: "How-To-Reset-Password",
   },
   {
-    title: "How To Reset Password",
+    title: "Change-Account-Settings",
     content:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium odio ipsum labore nobis, consequatur minus. Odit, in. Rerum, quae mollitia?",
-    page: "How To Add Product To Your Store",
+      "Click on “settings” on the top of  your dashboard. Update your profile settings by changing the name and password. Click on “update” to save changes",
+    page: "Change-Account-Settings",
   },
   {
     title: "How To Reset Password",

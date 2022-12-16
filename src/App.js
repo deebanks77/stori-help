@@ -27,7 +27,7 @@ function App() {
         <Route path="/article" element={<Article />} />
         <Route path="/faq" element={<FAQs />} />
         <Route path="/contact-support" element={<Support />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/article/Change-Account-Settings" element={<Settings />} />
         <Route
           path="/article/Creating-Stories-Using-Templates"
           element={<ArticleTemplate />}
