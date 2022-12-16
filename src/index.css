@@ -298,12 +298,16 @@ a {
 /* End Article section styles */
 
 /* FAQs style start */
+.section.FAQs {
+  margin: 30px auto;
+  border: 1px solid transparent;
+}
 .FAQs {
   max-width: 1200px;
-  margin: 0 auto;
   background-color: #596488;
   border: 1px solid transparent;
   padding: 20px;
+  margin: 0px auto;
 }
 
 .FAQs h1 {
@@ -485,6 +489,10 @@ a {
 
 /* Start Media Query */
 @media only screen and (max-width: 1230px) {
+  .section.FAQs {
+    margin: 0px auto;
+    border: 1px solid transparent;
+  }
   .help .article {
     /* width: 30%; */
     max-width: 300px;

@@ -25,16 +25,16 @@ function Navbar() {
         </div>
         <ul className="nav-list">
           <li>
-            <Link to="#Top-articlle">Top article</Link>{" "}
+            <Link to="/article">Top article</Link>{" "}
           </li>
           <li>
-            <a href="#FAQs">FAQs</a>{" "}
+            <Link to="/faq">FAQs</Link>{" "}
           </li>
           <li>
-            <a href="#Contact-support">Contact support</a>{" "}
+            <Link to="/contact-support">Contact support</Link>{" "}
           </li>
           <li>
-            <a href="#learn">Learn</a>{" "}
+            <Link to="/learn">Learn</Link>{" "}
           </li>
         </ul>
         <div className="nav-setting">
@@ -60,10 +60,18 @@ function Navbar() {
         <FaTimes onClick={handleClose} className={`closeNav `} />
 
         <ul className="hamburgerNavlist">
-          <li className="">Top article</li>
-          <li className="">FAQs</li>
-          <li className="">Contact support</li>
-          <li className="">Learn</li>
+          <li className="">
+            <Link to="/article">Top article</Link>{" "}
+          </li>
+          <li className="">
+            <Link to="/faq">FAQs</Link>{" "}
+          </li>
+          <li className="">
+            <Link to="/article">Contact Support</Link>{" "}
+          </li>
+          <li className="">
+            <Link to="/article">Learn</Link>{" "}
+          </li>
         </ul>
 
         <div className="hamburgerNav-setting">

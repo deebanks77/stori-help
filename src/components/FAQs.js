@@ -21,7 +21,20 @@ function FAQs() {
       <h1 className="section-header FAQs">Fequently asked questions</h1>
 
       <div className="all-questions">
-        <div className={`question ${state["show1"] ? "show" : ""}`}>
+        <div className={`question ${state["show6"] ? "show" : ""} `}>
+          <div className="plusIcon" onClick={() => dispatch({ type: "SHOW6" })}>
+            {state["show6"] ? <RxPlus /> : <RxMinus />}
+          </div>
+          <h4 className="">What is STORI?</h4>
+          <p className={`faqContent ${state["show6"] ? "" : "showFaqContent"}`}>
+            Stori is a web story with an easy drag and drop builder that builds
+            web stories [in amp format], Quizzes, Polls, mobile ecom stores and
+            more that will help engage your audience, get insane SEO traffic,
+            generate leads, drive sales, gain insights and shoot your
+            conversions to the moon.
+          </p>
+        </div>
+        <div className={`question ${state["show1"] ? "" : "show"}`}>
           <div className="plusIcon" onClick={() => dispatch({ type: "SHOW1" })}>
             {state["show1"] ? <RxPlus /> : <RxMinus />}
           </div>
@@ -86,19 +99,6 @@ function FAQs() {
           <p className={`faqContent ${state["show5"] ? "showFaqContent" : ""}`}>
             Please click here for assistance support@xcod.io A member of our
             team will attend to you
-          </p>
-        </div>
-        <div className={`question ${state["show6"] ? "" : "show"} `}>
-          <div className="plusIcon" onClick={() => dispatch({ type: "SHOW6" })}>
-            {state["show6"] ? <RxPlus /> : <RxMinus />}
-          </div>
-          <h4 className="">What is STORI?</h4>
-          <p className={`faqContent ${state["show6"] ? "showFaqContent" : ""}`}>
-            Stori is a web story with an easy drag and drop builder that builds
-            web stories [in amp format], Quizzes, Polls, mobile ecom stores and
-            more that will help engage your audience, get insane SEO traffic,
-            generate leads, drive sales, gain insights and shoot your
-            conversions to the moon.
           </p>
         </div>
       </div>

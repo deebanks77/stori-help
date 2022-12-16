@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { article } from "./data";
 import { Link } from "react-router-dom";
+// import video from "../videos/StoriDemo.mp4";
 
 function Article() {
   const [embedVideo, setEmbedVideo] = useState(true);
@@ -28,6 +29,15 @@ function Article() {
             ></iframe>
           </div>
         )}
+
+        {/* <video
+          style={{ maxWidth: "100%", width: "600px", margin: "0 auto" }}
+          autoplay
+          muted
+          loop
+        >
+          <source src={video} type="video/mp4" />
+        </video> */}
       </div>
 
       <div className="title">
