@@ -169,7 +169,7 @@ a {
   top: 0;
   right: -100%;
   width: 70%;
-  height: 90vh;
+  height: 100vh;
   background-color: black;
   z-index: 10;
   display: flex;
@@ -193,13 +193,13 @@ a {
   gap: 30px;
   margin-bottom: 30px;
 }
-.nav-section .hamburgerNav .hamburgerNavlist li {
-  font-size: 18px;
+.nav-section .hamburgerNav .hamburgerNavlist li a {
+  font-size: 28px;
   cursor: pointer;
   transition: all 1s ease;
   color: #fff;
 }
-.nav-section .hamburgerNav .hamburgerNavlist li:hover {
+.nav-section .hamburgerNav .hamburgerNavlist li:hover a {
   color: rgb(93, 132, 238);
 }
 .nav-section .hamburgerNav .setting-icon {
@@ -323,7 +323,7 @@ a {
   flex-wrap: wrap;
 }
 .FAQs .question {
-  padding: 15px 45px 15px 25px;
+  padding: 15px 25px;
   width: 80%;
   max-width: 900px;
   margin-bottom: 30px;
@@ -334,6 +334,10 @@ a {
   box-shadow: 0 0 10px #fff;
   position: relative;
   transition: all 1s ease;
+}
+
+.FAQs .question h4 {
+  padding-right: 20px;
 }
 
 .FAQs .question.show {
@@ -571,6 +575,9 @@ a {
   }
 }
 @media only screen and (max-width: 707px) {
+  .nav-section .hamburgerNav .hamburgerNavlist li {
+    font-size: 22px;
+  }
   .help .videoContainer {
     height: 350px;
   }
@@ -601,6 +608,9 @@ a {
     object-fit: contain;
   }
   .nav-section .navbar .hamburger {
+    font-size: 20px;
+  }
+  .nav-section .hamburgerNav .hamburgerNavlist li {
     font-size: 20px;
   }
   .help .article {
@@ -636,6 +646,20 @@ a {
   }
   .FAQs .question.show:nth-child(5) {
     height: 120px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .FAQs .question.show:nth-child(3) {
+    height: 85px;
+  }
+  .FAQs .question.show:nth-child(4) {
+    height: 100px;
+  }
+  .FAQs .question.show:nth-child(5) {
+    height: 140px;
+  }
+  .FAQs .question.show:nth-child(6) {
+    height: 100px;
   }
 }
 /* End Media Qyery */
