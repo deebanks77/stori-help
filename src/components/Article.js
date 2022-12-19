@@ -20,7 +20,7 @@ function Article() {
             maxHeight: "395px",
             margin: "0 auto",
           }}
-          autoplay
+          autoPlay
           muted
           loop
           controls

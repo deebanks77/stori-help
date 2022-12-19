@@ -99,7 +99,7 @@ function Support() {
             <div className="info-container">
               {contactInfo.map((item, index) => {
                 return (
-                  <div className="info">
+                  <div className="info" key={index}>
                     <>{icons[index]}</>
                     <div>
                       <span className="text">{item.title}:</span>

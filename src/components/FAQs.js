@@ -14,7 +14,7 @@ const initialState = {
 
 function FAQs() {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state);
+  // console.log(state);
 
   return (
     <div className="section FAQs" id="FAQs">
