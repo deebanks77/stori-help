@@ -76,10 +76,10 @@ function Navbar() {
             <Link to="/faq">FAQs</Link>{" "}
           </li>
           <li className="nav-btn" onClick={handleClose}>
-            <Link to="/article">Contact Support</Link>{" "}
+            <Link to="/contact-support">Contact Support</Link>{" "}
           </li>
           <li className="nav-btn" onClick={handleClose}>
-            <Link to="/article">Learn</Link>{" "}
+            <Link to="/learn">Learn</Link>{" "}
           </li>
         </ul>
 

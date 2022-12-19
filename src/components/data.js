@@ -102,4 +102,23 @@ const faqData = [
   },
 ];
 
-export { article, faqData };
+const contactInfo = [
+  {
+    title: "Adress",
+    content: "1671 Dog Hill Lane",
+  },
+  {
+    title: "Phone",
+    content: "+234 810 700 0344",
+  },
+  {
+    title: "Email",
+    content: "info@xcod.com",
+  },
+  {
+    title: "website",
+    content: "www.xcod.com",
+  },
+];
+
+export { article, faqData, contactInfo };
